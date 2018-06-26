@@ -1,0 +1,29 @@
+<!--pages/my/record/record.wxml-->
+<view class='container'>
+  <scroll-view class='topBtn' scroll-x="true" wx:if='{{btnArr.length>0}}'>
+    <block wx:for='{{btnArr}}'>
+      <view class='btnview' bindtap='btnClick' data-item='{{item}}'>
+        <view class='subBtn'>
+          <label style="color:{{item.name ==  name? '#EC4837' : '#506473'}}">{{item.name}}</label>
+          <view class='line' style="background:{{item.name ==  name? '#EC4837' : 'white'}}"></view>
+        </view>
+      </view> 
+    </block>
+  </scroll-view>
+  <view class='tab' wx:if='{{dataArr.length>0}}'>
+    <block wx:for='{{dataArr}}'>
+      <view class='tr'>
+        <view class='leftTd'>
+          <label style='font-size:14px;'>{{item.trnas_Name}}</label>
+          <label>操作时间</label>
+          <label>备注</label>
+        </view>
+        <view class='rightTd'>
+          <label style='font-size:14px;'>{{item.amount}}</label>
+          <label>{{item.opera_date}}</label>
+          <label>{{item.memo}}</label>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

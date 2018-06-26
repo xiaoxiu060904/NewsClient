@@ -1,0 +1,2 @@
+<!--pages/wxWebView/wxWebView.wxml-->
+<web-view src="{{OpenUrl}}"></web-view>

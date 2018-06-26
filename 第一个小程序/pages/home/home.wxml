@@ -1,0 +1,72 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='banner' wx:if="{{banners.length>0}}">
+     <swiper class="swiper"  indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{banners}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.pic_url}}" catchtap="onBannerItemClick" class="slide-image" mode="aspectFill" data-item="{{item}}"/>    
+        </swiper-item>    
+      </block>    
+    </swiper> 
+  </view>
+  <view class='new'>
+    <image class='newIcon' src='../../images/ic_login_user.png'></image>
+    <view class='newScrollView'>
+      <swiper class="newswiper" autoplay="true" interval="5000" duration="1000" vertical='true' >    
+      <block wx:for="{{NewsList}}" wx:for-index="index">    
+        <swiper-item>
+           <view class='TextView'>
+            <text class='newText'>{{item.title}}</text> 
+          </view>   
+        </swiper-item>    
+      </block>    
+    </swiper> 
+    </view>
+  </view>
+  <view class='active'>
+    <view class='activemodel'>
+      <image src="../../images/home/home_sign.png" catchtap="onActiveItemClick" mode="aspectFit" data-item="每日签到"/>  
+      <text>每日签到</text>
+    </view>
+    <view class='activemodel'>
+      <image src="../../images/home/home_yaoqing.png" mode="aspectFit" catchtap="onActiveItemClick" data-item="邀请有礼"/> 
+      <text>邀请有礼</text>
+    </view>
+    <view class='activemodel'>
+      <image src="../../images/home/home_doudou.png" mode="aspectFit" catchtap="onActiveItemClick" data-item="豆豆商城"/> 
+      <text>豆豆商城</text>
+    </view>
+    <view class='activemodel'>
+      <image src="../../images/home/home_pilu.png" mode="aspectFit" catchtap="onActiveItemClick" data-item="信息披露"/> 
+      <text>信息披露</text>
+    </view>
+  </view>
+  <view class='product' wx:if="{{ProductList.length>0}}">
+      <swiper class="producswiper" indicator-dots="true" interval="5000" duration="1000">    
+        <block wx:for="{{ProductList}}" wx:for-index="index">    
+          <swiper-item> 
+            <view class='productview' >
+              <view class='productname'>
+                <label>{{item.Full_Name}}</label>
+                <!-- <text>{{item.Full_Name}}</text> -->
+             </view>
+             <text style='color:#EC4837;font-size:34px;'>{{item.allinstrest+"%"}}</text>
+             <text>{{item.Period+"期限 "+item.LeftAmountMemo}}</text>
+             <button bindtap='onproductClick' data-item="{{item}}">立即抢购</button> 
+            </view> 
+        </swiper-item>    
+      </block>    
+      </swiper> 
+  </view>
+  <view class='PlatformView' wx:if="{{Platform.PlatformData.length>0}}">
+    <view class="{{index%2 ===  0? 'sonView1' : 'sonView'}}" wx:for="{{Platform.PlatformData}}" data-index="{{index}}">
+      <label class='PlatformLab'>{{item.ItemName}}</label>
+      <text class='PlatformText'>{{item.ItemValue}}</text>
+    </view>
+  </view>
+  <view class='bottomView'>
+    <image src='../../images/ic_login_user.png'></image>
+    <label>网贷有风险,投资需谨慎</label>
+  </view>
+</view>
+    

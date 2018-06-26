@@ -1,0 +1,74 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <view class='head'>
+    <view class='headtop'>
+      <label>{{netAsset}}</label>
+      <image fill="white" src='../../images/me/eye.svg' catchtap="onEyeClick"></image>
+    </view>
+    <view class='bg'>
+      <image src='../../images/mebg.png'></image>
+    </view>
+    <view>
+      <view class='headcenter'>
+        <label>资产总额</label>
+      <!-- <image class='newIcon' src='../../images/me/right.svg'></image> -->
+      </view>
+    </view>
+    <view class='headbottom'>
+      <view class='headbottommodel'>
+        <label class='lab1'>可用金额</label>
+        <label class='lab2'>{{balance}}</label>
+      </view>
+      <view class='headbottommodel'>
+        <label class='lab1'>冻结金额</label>
+        <label class='lab2'>{{freez_fund}}</label>
+      </view>
+      <view class='headbottommodel'>
+         <label class='lab1'>待收金额</label>
+          <label class='lab2'>{{unGet_InteFund}}</label>
+      </view>
+    </view>
+  </view>
+  <view class='center'>
+     <view class='centertop'>
+      <button bindtap='onTixianClick'>提现</button>
+      <view class='labView'>
+        <label></label>
+      </view>
+      <button bindtap='onChongzhiClick'>充值</button>
+    </view> 
+    <view class='centerbottom'>
+      <block wx:for="{{CenterData}}">
+        <view class='activemodel' bindtap='onTableClick' data-item="{{item}}">
+          <image src="{{item.image}}" mode="aspectFit" /> 
+          <text >{{item.title}}</text> 
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='bottom'>
+       <view class="table" >
+          <block wx:for="{{BottomData}}"  >
+             <view class="{{index%3 === 0?'tr1':'tr'}}">
+                <view class="td" bindtap='onTableClick' data-item="{{item}}">
+                    <view class='tdleft'>
+                        <image src="{{item.image}}" mode="aspectFit" />  
+                        <text >{{item.title}}</text>
+                    </view>
+                    <view class='tdright'>
+                         <image src="../../images/me/right.svg" mode="aspectFit"/>  
+                        <text >{{item.text}}</text> 
+                    </view>
+                </view>
+               </view>
+             </block>  
+       </view>
+    </view>
+</view>
+<view class='aler_view' wx:if='{{showStatus}}' bindtap='alertClick'>
+  <view class='bgView'></view>
+  <view class='sub'>
+    <image src='../../images/Group9.png' mode="aspectFill" ></image>
+    <button bindtap='btnClick'>升级</button>
+  </view>
+</view>

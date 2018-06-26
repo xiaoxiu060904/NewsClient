@@ -1,0 +1,74 @@
+.container{
+  display: flex;
+  padding: 0;
+  width: 100%;
+  background: #F0F0F3;
+}
+.topview{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background: white;
+}
+.allMoney{
+  margin-top: 10px;
+  width: 100%;
+  color: #EC4837;
+  font-size: 28px;
+  text-align: center;
+}
+.contentLab{
+  width: 100%;
+  color:  #506473;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tab{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tr{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-bottom: 0.5px solid #F0F0F3;
+}
+.lefttd{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.lefttd label{
+  color: #506473;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.righttd{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+.righttd label{
+  color: #EC4837;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+}

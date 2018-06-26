@@ -1,0 +1,20 @@
+<!--pages/set/setting.wxml-->
+<view class='container'>
+   <view class='bottom'>
+       <view class="table" >
+          <block wx:for="{{SettingData}}"  >
+             <view class='tr'>
+                <view class="td" bindtap='onTableClick' data-item="{{item}}">
+                    <view class='tdleft'>
+                        <text >{{item.title}}</text>
+                    </view>
+                    <view class='tdright'>
+                         <image src="../../images/me/right.svg" mode="aspectFit"/>  
+                    </view>
+                </view>
+               </view>
+             </block>  
+       </view>
+    </view>
+    <button class='btn' bindtap='loginOut'> 退出登录 </button>
+</view>

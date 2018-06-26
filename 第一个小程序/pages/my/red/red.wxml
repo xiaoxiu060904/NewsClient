@@ -1,0 +1,29 @@
+<view class='container'>
+  <view class='topview'>
+    <label class='allMoney'>{{redData.leftAmount}}</label>
+    <label class='contentLab'>红包总金额</label>
+    <view class='topBottom'>
+      <label style='margin-left:20px;text-align:left'>{{'红包返现 '+redData.returnAmount}}</label>
+      <label style='margin-right:20px;text-align:right'>{{'近30天浪费红包 '+redData.wastedAmount}}</label>
+    </view>
+  </view>
+  <view class='tab'>
+   <view class='tr'>
+      <block wx:for="{{title}}"  >
+        <view class="{{index%2 ===  0? 'tdleft' : 'tdfight'}}">
+           <label>{{item}}</label>
+        </view>
+      </block>
+    </view>
+    <view class='tr' wx:if='{{redData.list.length>0}}'>
+      <block wx:for="{{redData.list}}"  >
+         <view class='tdleft'>
+          <label>{{item.expiredDate}}</label>
+        </view>
+        <view class='tdfight'>
+          <label>{{item.expiredMoney}}</label>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

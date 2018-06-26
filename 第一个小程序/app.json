@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/product/product",
+    "pages/find/find",
+    "pages/my/my",
+    "pages/wxWebView/wxWebView",
+    "pages/set/setting",
+    "pages/my/nextBack/nextBack",
+    "pages/my/record/record",
+    "pages/my/hpd/hpd",
+    "pages/my/red/red",
+    "pages/my/jxq/jxq",
+    "pages/wxWebView/NoCodeWeb"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "合盘金服",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeselect.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "images/pruduct.png",
+        "selectedIconPath": "images/pruductselect.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/findselect.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myselect.png"
+      }
+    ]
+  }
+}

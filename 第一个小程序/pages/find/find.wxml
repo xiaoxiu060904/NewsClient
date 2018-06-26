@@ -1,0 +1,14 @@
+<!--pages/find/find.wxml-->
+
+ <view class='container'> 
+  <view class="table" >
+    <block wx:for="{{listData}}"  >
+      <view class="{{(3 <= index)&& (index<= 5)?'tr1':'tr'}}">
+        <view class="td" bindtap='onTableClick' data-item="{{item}}">
+         <image src="{{item.image}}" mode="aspectFit" />  
+         <text >{{item.title}}</text>
+       </view>
+     </view>
+    </block>
+  </view>
+ </view> 

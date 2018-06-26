@@ -1,0 +1,28 @@
+<view class='container'>
+  <scroll-view class='topBtn' scroll-x="true" wx:if='{{btnArr.length>0}}'>
+    <block wx:for='{{btnArr}}'>
+      <view class='btnview' bindtap='btnClick' data-item='{{item}}'>
+        <view class='subBtn'>
+          <label style="color:{{item.name ==  name? '#EC4837' : '#506473'}}">{{item.name}}</label>
+          <view class='line' style="background:{{item.name ==  name? '#EC4837' : 'white'}}"></view>
+        </view>
+      </view> 
+    </block>
+  </scroll-view>
+  <view class='tab' wx:if='{{jxqData.length>0}}'>
+    <block wx:for='{{jxqData}}'>
+      <view class='td'>
+        <view class='left'>
+          <label style='font-size:20px;'>{{item.amount}}</label>
+          <label>加息券</label>
+        </view>
+        <image src='../../../images/jxq_blue.png'></image>
+        <view class='right'>
+          <label style='font-size:14px;'>{{item.Title}}</label>
+          <label style='margin-top:5px;'>{{'使用条件:'+item.condition}}</label>
+          <label>{{'有效时间:'+item.start_time+'到'+item.validDate}}</label>
+        </view>
+      </view>
+    </block>
+  </view>
+</view> 

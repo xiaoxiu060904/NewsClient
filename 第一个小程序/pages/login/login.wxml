@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<!-- background  -->
+<view class='bg'>
+  <image src='../../images/bg_com_user_login.jpg'></image>
+</view>
+<view class='container'>
+  <view class='center'>
+    <view class='toparea'>
+      <image class='avatar' src='../../images/ic_login_avatar.png'></image>
+    </view>
+    <view class='area'>
+      <view class='cell'>
+        <image class='imgIcon' src='../../images/ic_login_user.png'></image>
+        <input class='inputf' placeholder='请输入手机号码' bindinput='inputUsername'></input>
+      </view>
+      <view class='cell' style='margin-top:20rpx;'>
+        <image class='imgIcon' src='../../images/ic_login_lock.png'></image>
+        <input class='inputf' placeholder='请输入密码' password='true' bindinput='inputPassword'></input>
+      </view>
+      <button class='loginBtn' bindtap='login'>登录</button>
+    </view>
+  </view>
+  <button bindtap='bindViewTap'>进入首页</button>
+</view>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

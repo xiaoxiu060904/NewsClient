@@ -1,0 +1,39 @@
+<!--pages/product/product.wxml-->
+
+<view class='container'>
+  <view class='topBanner' wx:if="{{banners.length>0}}">
+    <swiper class="swiper"   autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{banners}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.pic_url}}" class="slide-image" bindtap='onBannerItemClick' mode="aspectFill" data-item="{{item}}"/>    
+        </swiper-item>    
+      </block>    
+    </swiper> 
+  </view>
+  <view wx:if="{{Products.length>0}}" class='product'>
+    <block wx:for="{{Products}}"  >
+      <view class='productView' bindtap='onProductClick' data-item="{{item}}">
+          <view class='producttopview'>
+            <label class='fullnamelabel'>{{item.Full_Name}}</label>
+            <view class='tagView' wx:if="{{item.tagArr.length>0}}">
+              <block wx:for="{{item.tagArr}}" >
+                 <label class='tagLab'>{{item}}</label> 
+              </block> 
+            </view>
+            <image wx:if="{{item.ActivityImage.length>0}}" src='{{item.ActivityImage}}' mode="aspectFit"  ></image> 
+          </view>
+       <view class='productcenterview'>
+        <label style='font-size: 18px;color:#EC4837;'>{{item.allinstrest+'%'}}</label>
+        <label>{{item.Period}}</label>
+        <label>{{item.LeftAmountMemo+'元'}}</label>
+       </view>
+       <view class='productbottomview'>
+        <label>{{item.RateMemo}}</label>
+        <label>投资期限</label>
+        <progress percent='{{item.Pro}}' stroke-width='2' active='true'  color="#EC4837" />
+       </view>
+      </view>
+    </block>
+  </view>
+  
+</view>

@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='topview'>
+    <label class='allMoney'>{{HPDData.pea_balance}}</label>
+    <label class='contentLab'>可用合盘豆</label>
+  </view>
+  <view class='tab'>
+    <view class='tr' wx:if='{{dataArr.length>0}}'>
+      <block wx:for="{{dataArr}}"  >
+        <view class='lefttd'>
+          <label>{{item.memo}}</label>
+          <label style='font-size:12px;margin-bottom:5px;'>{{item.opera_date}}</label>
+        </view>
+        <view class='righttd'>
+          <label>{{item.amount}}</label>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/my/nextBack/nextBack.wxml-->
+<view class='container'>
+  <view class='topview'>
+    <label class='allMoney'>{{moneyData.unget_intefund}}</label>
+    <label class='contentLab'>待收总额(元)</label>
+  </view>
+  <view class='tab'>
+    <view class='tr'>
+      <block wx:for="{{title}}"  >
+        <view class='td'>
+          <label>{{item}}</label>
+        </view>
+      </block>
+    </view>
+    <view class='tr' wx:if='{{moneyData.list.length>0}}'>
+      <block wx:for="{{moneyData.list}}"  >
+        <view class='td'>
+          <label>{{item.date}}</label>
+        </view>
+        <view class='td'>
+          <label>{{item.number}}</label>
+        </view>
+        <view class='td'>
+          <label>{{item.profit}}</label>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

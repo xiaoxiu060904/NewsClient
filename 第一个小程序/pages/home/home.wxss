@@ -1,0 +1,197 @@
+/* pages/home/home.wxss */
+.container{
+  display: flex;
+   /* border:1px solid #ccc;   */
+  flex-direction: column;
+  padding: 0;
+  /* padding: 10px 10px 10px 10px;   */
+}
+
+.banner{
+  width: 100%;
+  height: 140px;
+  /* margin-top: 100px; */
+}
+.swiper {
+  height: 140px;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.new {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+.new image{
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}
+.newScrollView{
+  height: 100%;
+  margin-left: 10px;
+  width: 100%; 
+}
+.newswiper {
+  height: 100%;
+  width: 100%;
+}
+.TextView{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.newText{  
+  font-size: 12px;
+  color: l#506473;
+}
+
+.active{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  background: #F0F0F3;
+  flex-direction: row;
+}
+.activemodel{
+  margin-top: 0.5px;
+  background: white;
+  display: flex;
+  width: 25%;
+  height: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activemodel image{
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+}
+.activemodel text{
+  font-size: 12px;
+  color: #506473
+}
+
+.product{
+  margin: 0;
+  width: 100%;
+  background: #F0F0F3;
+  /* border: 0.5px solid #ccc; */
+}
+.producswiper{
+  margin-top: 10px;
+  background: white;
+  width: 100%;
+  height: 160px;
+}
+.productview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.productview text{
+  display: flex;
+  width: 100%;
+  align-items: center; 
+  flex-flow: column;
+  font-size: 14px;
+  color: #506473
+}
+.productview button{
+  margin-top: 10px;
+  width: 50%;
+  height: 30px;
+  color: white;
+  background: #EC4837;
+  border-radius: 15px;
+  font-size: 13px;
+}
+.productname{
+  /* display: flex;
+  flex-flow: row; */
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 120px;
+  height: 20p;
+  display: flex;
+}
+.productname label{
+  font-size: 12px;
+  color: #506473;
+  justify-content:flex-start;
+}
+.PlatformView{
+  width: 100%;
+  margin: 0 0;
+  background: #F0F0F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  /* flex-flow: row; */
+}
+.PlatformView view{
+  height: 70px;
+  width: 45%;
+  margin-top: 10px;
+  background: white;
+  border-radius: 5px;
+}
+.sonView{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+}
+.sonView1{
+  margin-right:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+}
+.PlatformLab{
+  margin-left: 20px;
+  font-size: 12px;
+  color: #506473; 
+}
+.PlatformText{
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 16px bloder;
+  color: #506473;
+}
+.bottomView{
+  margin: 0;
+  width: 100%;
+  background:#F0F0F3; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bottomView image{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 15px;
+  height: 15px;
+}
+.bottomView label{
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 15px;
+  /* width: 50%; */
+  color:#506473; 
+  font-size: 12px;
+}

@@ -1,0 +1,104 @@
+.container{
+  display: flex;
+  padding: 0;
+  width: 100%;
+}
+.topBanner{
+  width: 100%;
+  background: #F0F0F3;
+}
+.swiper {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.product{
+  width: 100%;
+  margin: 0;
+}
+.productView{
+  width: 100%;
+  height: 120px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  background:#F0F0F3;
+}
+.producttopview{
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  background:white;
+}
+.producttopview image{
+  margin-left: 10px;
+  width: 110px;
+  height: 17px;
+}
+.fullnamelabel{
+  margin-left: 10px;
+  color:#506473; 
+  font-size: 12px;
+}
+.tagView{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  background:white;
+}
+.tagLab{
+  border : 1px solid #F0F0F3; 
+  border-radius: 4px; 
+  margin-left: 6px;
+  color:#506473; 
+  font-size: 11px;
+  padding:0 5px 0 5px;
+}
+
+
+.productcenterview{
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background:white;
+}
+.productcenterview label{
+  margin-left: 10px;
+  /* border: 1px solid red; */
+  color:#506473; 
+  font-size: 12px;
+  width: 30%;
+}
+.productbottomview{
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5px;
+  background:white;
+}
+.productbottomview label{
+  margin-left: 10px;
+  /* border: 1px solid red; */
+  color:#506473; 
+  font-size: 12px;
+  width: 30%;
+}
+.productbottomview progress{
+  margin-left: 10px;
+  width: 15%;
+}
