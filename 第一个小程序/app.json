@@ -12,7 +12,8 @@
     "pages/my/hpd/hpd",
     "pages/my/red/red",
     "pages/my/jxq/jxq",
-    "pages/wxWebView/NoCodeWeb"
+    "pages/wxWebView/NoCodeWeb",
+    "pages/open/open"
   ],
   "window": {
     "backgroundTextStyle": "light",
