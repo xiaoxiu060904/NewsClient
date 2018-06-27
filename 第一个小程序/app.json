@@ -13,7 +13,8 @@
     "pages/my/red/red",
     "pages/my/jxq/jxq",
     "pages/wxWebView/NoCodeWeb",
-    "pages/open/open"
+    "pages/open/open",
+    "pages/open/cash"
   ],
   "window": {
     "backgroundTextStyle": "light",
