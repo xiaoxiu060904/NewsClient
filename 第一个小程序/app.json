@@ -14,7 +14,9 @@
     "pages/my/jxq/jxq",
     "pages/wxWebView/NoCodeWeb",
     "pages/open/open",
-    "pages/open/cash"
+    "pages/open/cash",
+    "pages/open/hi2",
+    "pages/open/hi3"
   ],
   "window": {
     "backgroundTextStyle": "light",
